@@ -1,0 +1,28 @@
+.content {
+    padding: 5px 5px 10px 5px;
+}
+
+.handlerText{
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+
+.reply:hover, .delete:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input, textarea{
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none
+}
+
+.add-btn{
+    margin-top: 10px;
+}
+
+.like:hover, .dislike:hover {
+    cursor: pointer;
+}

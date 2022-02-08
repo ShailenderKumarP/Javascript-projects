@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+h1 {
+    color: #323330;
+}
+
+h3 {
+    text-align: center;
+    padding: 5px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.drop-targets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    width: 90%;
+    height: 90%;
+}
+
+.box {
+    height: auto;
+    width: auto;
+    border: solid 3px #ccc;
+    margin: 10px;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 30%;
+    min-width: 30%;
+    padding: 10px;
+    box-shadow: 3px 3px 2px;
+}
+
+.box:hover{
+    box-shadow: none;
+}
+
+.drag-over {
+    border: dashed 3px red;
+}
+
+.item {
+    height: auto;
+    width: auto;
+    border:1px solid #F0DB4F;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.taskSummary{
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+button.addTasksBtn{
+    background-color: transparent;
+    outline: none;
+    border-radius: 15px;
+    padding: 5px 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.addTasksForm {
+    padding: 10px;
+}
+
+.inputTitle, .inputDesc{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    float: right;
+    width: 50%;
+}
+
+button.saveBtn{
+    outline: none;
+    background: transparent;
+    padding: 5px 8px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
